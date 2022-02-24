@@ -2,24 +2,18 @@ import React from "react";
 import jsPDF from "jspdf";
 import html2canvas from 'html2canvas';
 
-const doc = new jsPDF('l', 'in', [4,2]);
+const doc = new jsPDF();
+const Pdf = <div className = "CardView"></div>;
 
-const width = doc.internal.pageSize.getWidth();
-const height = doc.internal.pageSize.getHeight();
 
 
 export default function App() {
 const exportPdf = () => {
-    html2canvas(document.querySelector(".CardView"), {
-        allowTaint: true,
-        useCORS: true,
-        scale: 2,
-        }).then(canvas => {
+    html2canvas(document.querySelector(".CardView")).then(canvas => {
         document.body.appendChild(canvas);
         const img = canvas.toDataURL('image/png');
-        doc.addImage(img, 'PNG', 0, 0, width, height);
-        // to add a new page to the pdf file
-        // doc.addPage('l', 'in', [4,2])
+        const doc = new jsPDF();
+        doc.addImage(img, 'PNG', 0,0);
         doc.save("myBusinessCard.pdf")
     })
 }

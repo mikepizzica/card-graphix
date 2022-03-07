@@ -17,7 +17,7 @@ const Header = () => {
       <motion.div className="top"
         initial={{ y: -250 }}
         animate={{ y: -10 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+        transition={{ delay: 0, }}
       >
       <Link className="logo" to="/">
         <h1>Card Graphix</h1>
@@ -33,7 +33,7 @@ const Header = () => {
           <><motion.div className="container-2"
           initial={{ y: -250 }}
           animate={{ y: -10 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0 }}
           >
             <Link className="login section" to="/login">
               Login

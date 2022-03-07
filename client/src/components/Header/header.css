@@ -1,4 +1,7 @@
-
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
 
 h1 {
     font-weight: 500;
@@ -11,14 +14,9 @@ h1 {
     font-variant: small-caps;
 }
 
-#top {
-    display: flex;
-    justify-content: space-between;
-}
-
 .logo:hover {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .container {
@@ -40,7 +38,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-bottom: 0px;
 }
 

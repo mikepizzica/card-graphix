@@ -13,7 +13,7 @@ export default function Instruction() {
                 transition={{ delay: 1.5, duration: 1.5 }}
                 className="inner-wrapper">
                 <h2>Design your Business Cards</h2>
-                <h3>We have design options to help you create your own business card in minutes.</h3>
+                <h3>We have options to help you create your own business card in minutes.</h3>
             </motion.div>
             <motion.div className="steps"
             initial={{ opacity: 0 }}

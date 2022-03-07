@@ -20,12 +20,14 @@
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .inner-wrapper h3 {
   text-align: center;
   font-size: 17px;
   margin-bottom: 20px;
+  margin-top: 20px
 }
 
 .steps {
@@ -39,10 +41,10 @@
   padding-right: 5vw;
   padding-left: 5vw;
   background-color: #fa9d5b;
-  border-radius: 50%;
-  height: fit-content;
+  border-radius: 5px;
   width: 25vw;
-  margin: 2vw;
+  max-width: 370px;
+  margin: 0px 20px;
 }
 
 .numbered-step-num {

@@ -29,7 +29,7 @@ const Header = () => {
           animate={{ y: -10 }}
           transition={{ delay: 0.5 }}
           >
-          <button className="logout section" onClick={logout}>
+          <button id="logout" className="logout section" onClick={logout}>
             Logout
           </button>
           </motion.div>

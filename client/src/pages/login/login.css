@@ -1,30 +1,23 @@
 .login-container {
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 5%;
-
 }
-
 
 .card {
     border-color: darkgrey;
     border: none;
-    min-width: 340px;
-    min-height: 330px;
-    padding: 30px;
-   
+    max-width: 400px;
 }
 
 .title {
     text-align: center;
     font-size: 25px;
     font-variant: small-caps;
-   
+    margin: 0px 0px 20px 0px;
 }
 
-.button {
-    outline: none;
-    display: flex;
-    justify-content: center;
+#submit-button {
+    margin: 0px;
 }
 
 .input1 {
@@ -32,13 +25,11 @@
     outline: none;
     margin: 0 0 20px;
     height: 50px;
-  
 }
 
 .input2 {
     border-color: #A5A58D;
     outline: none;
-    margin: 0 0 5rem;
+    margin: 0 0 20px;
     height: 50px;
 }
-

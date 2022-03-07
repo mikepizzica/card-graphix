@@ -13,7 +13,7 @@ export default function Instruction() {
                 transition={{ delay: 0.2, duration: 0.2 }}
                 className="inner-wrapper">
                 <h2>Design your Business Cards</h2>
-                <h3>We have options to help you create your own business card in minutes.</h3>
+                <h3>Create your own business card in minutes</h3>
             </motion.div>
             <motion.div className="steps"
             initial={{ opacity: 0 }}
@@ -30,7 +30,7 @@ export default function Instruction() {
                     className="step">
                     <div className="numbered-step-num"> 1 </div>
                     <div className="numbered-step-txt1">
-                        <p>Pick out the design.</p>
+                        <p>Pick design</p>
                     </div>
                 </motion.div>
                 <motion.div
@@ -42,7 +42,7 @@ export default function Instruction() {
                     className="step">
                     <div className="numbered-step-num"> 2 </div>
                     <div className="numbered-step-txt2">
-                        <p>Choose fields you want to add.</p>
+                        <p>Choose fields</p>
                     </div>
                 </motion.div>
                 <motion.div
@@ -54,7 +54,7 @@ export default function Instruction() {
                     className="step">
                     <div className="numbered-step-num"> 3 </div>
                     <div className="numbered-step-txt3">
-                        <p>Export and done!</p>
+                        <p>Export card</p>
                     </div>
                 </motion.div>
             </motion.div>

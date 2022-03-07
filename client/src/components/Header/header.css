@@ -48,18 +48,19 @@ h1 {
    font-weight: 400;
 }
 
-
-
-.section:hover {
-    color:rgb(5, 91, 91);
-}
-
-.logout {
+button {
+    padding: 0px;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
     font-weight: 400;
+    position: relative;
+    top: -3px;
+}
+
+.section:hover {
+    color:rgb(5, 91, 91);
 }
 
 .logout:hover {
@@ -70,6 +71,5 @@ h1 {
 @media screen and (max-width: 600px) {
     .container {
         flex-direction: column;
-      
     }
   }

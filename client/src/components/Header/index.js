@@ -17,23 +17,27 @@ const Header = () => {
       <motion.div className="top"
         initial={{ y: -250 }}
         animate={{ y: -10 }}
-        transition={{ delay: 0, }}
+        transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
       >
       <Link className="logo" to="/">
         <h1>Card Graphix</h1>
       </Link>
       </motion.div>
         {Auth.loggedIn() ? (
-          <div className="container-2">
+          <motion.div className="container-2"
+          initial={{ y: -250 }}
+          animate={{ y: -10 }}
+          transition={{ delay: 0.5 }}
+          >
           <button className="logout section" onClick={logout}>
             Logout
           </button>
-          </div>
+          </motion.div>
         ) : (
           <><motion.div className="container-2"
           initial={{ y: -250 }}
           animate={{ y: -10 }}
-          transition={{ delay: 0 }}
+          transition={{ delay: 0.5 }}
           >
             <Link className="login section" to="/login">
               Login

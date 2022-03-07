@@ -1,8 +1,15 @@
 * {
   font-family: 'Montserrat', sans-serif;
-
 }
 
+.sections {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+}
 
 /* ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

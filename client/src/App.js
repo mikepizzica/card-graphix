@@ -45,29 +45,31 @@ const client = new ApolloClient({
 
 function App() {
   return (
-      <ApolloProvider client={client}>
-        <Router>
+    <ApolloProvider client={client}>
+      <Router>
         <div className="sections">
-          <Header />
-          <div className="m-1 d-flex flex-column align-content-center justify-content-center">
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
-            <Route exact path="/card">
-              <Card />
-            </Route>
-            <Route exact path="/profiles/:profileId">
-              <Profile />
-            </Route>
-            <Route exact path="/contact-us">
-              <ContactUs />
-            </Route>
+          <div className="content-wrap">
+            <Header />
+            <div className="m-1 d-flex flex-column align-content-center justify-content-center">
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/login">
+                <Login />
+              </Route>
+              <Route exact path="/signup">
+                <Signup />
+              </Route>
+              <Route exact path="/card">
+                <Card />
+              </Route>
+              <Route exact path="/profiles/:profileId">
+                <Profile />
+              </Route>
+              <Route exact path="/contact-us">
+                <ContactUs />
+              </Route>
+            </div>
           </div>
           <Footer />
         </div>

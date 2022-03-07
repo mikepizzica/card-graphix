@@ -2,13 +2,19 @@ h4 {
     font-size: 15px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
 }
 
 @media screen and (max-width: 600px) {
